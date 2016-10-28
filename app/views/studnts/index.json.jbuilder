@@ -1,0 +1,1 @@
+json.array! @studnts, partial: 'studnts/studnt', as: :studnt

@@ -1,0 +1,1 @@
+json.array! @st_has_deps, partial: 'st_has_deps/st_has_dep', as: :st_has_dep

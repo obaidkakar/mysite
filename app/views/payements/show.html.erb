@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ammount:</strong>
+  <%= @payement.Ammount %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @payement.Discount %>
+</p>
+
+<p>
+  <strong>Total fee:</strong>
+  <%= @payement.Total_fee %>
+</p>
+
+<p>
+  <strong>Remaining fee:</strong>
+  <%= @payement.Remaining_fee %>
+</p>
+
+<p>
+  <strong>Pay date:</strong>
+  <%= @payement.Pay_date %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @payement.student %>
+</p>
+
+<%= link_to 'Edit', edit_payement_path(@payement) %> |
+<%= link_to 'Back', payements_path %>

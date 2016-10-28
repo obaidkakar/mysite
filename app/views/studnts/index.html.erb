@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Studnts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>St name</th>
+      <th>F name</th>
+      <th>Gender</th>
+      <th>Address</th>
+      <th>Cell#</th>
+      <th>Local</th>
+      <th>Cnic</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @studnts.each do |studnt| %>
+      <tr>
+        <td><%= studnt.St_name %></td>
+        <td><%= studnt.F_name %></td>
+        <td><%= studnt.Gender %></td>
+        <td><%= studnt.Address %></td>
+        <td><%= studnt.Cell# %></td>
+        <td><%= studnt.Local %></td>
+        <td><%= studnt.CNIC %></td>
+        <td><%= link_to 'Show', studnt %></td>
+        <td><%= link_to 'Edit', edit_studnt_path(studnt) %></td>
+        <td><%= link_to 'Destroy', studnt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Studnt', new_studnt_path %>

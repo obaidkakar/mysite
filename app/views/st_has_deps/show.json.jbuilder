@@ -1,0 +1,1 @@
+json.partial! "st_has_deps/st_has_dep", st_has_dep: @st_has_dep

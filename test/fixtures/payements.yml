@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Ammount: 1
+  Discount: MyString
+  Total_fee: 1
+  Remaining_fee: 1
+  Pay_date: 2016-10-28
+  student: one
+
+two:
+  Ammount: 1
+  Discount: MyString
+  Total_fee: 1
+  Remaining_fee: 1
+  Pay_date: 2016-10-28
+  student: two

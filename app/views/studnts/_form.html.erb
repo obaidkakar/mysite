@@ -1,0 +1,52 @@
+<%= form_for(studnt) do |f| %>
+  <% if studnt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(studnt.errors.count, "error") %> prohibited this studnt from being saved:</h2>
+
+      <ul>
+      <% studnt.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :St_name %>
+    <%= f.text_field :St_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :F_name %>
+    <%= f.text_field :F_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Gender %>
+    <%= f.text_field :Gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Address %>
+    <%= f.text_area :Address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Cell# %>
+    <%= f.text_field :Cell# %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Local %>
+    <%= f.text_field :Local %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CNIC %>
+    <%= f.text_field :CNIC %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

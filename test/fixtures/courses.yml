@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Course_name: MyString
+  CS_duration: MyString
+
+two:
+  Course_name: MyString
+  CS_duration: MyString
